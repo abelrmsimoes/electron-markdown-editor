@@ -47,9 +47,9 @@ const createWindow = async () => {
   mainWindow.on('ready-to-show', () => {
     mainWindow?.show()
 
-    if (import.meta.env.MODE === 'development') {
-      mainWindow?.webContents.openDevTools()
-    }
+    // if (import.meta.env.MODE === 'development') {
+    //   mainWindow?.webContents.openDevTools()
+    // }
   })
 
   /**
