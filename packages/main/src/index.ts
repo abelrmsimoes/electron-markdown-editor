@@ -36,6 +36,7 @@ const createWindow = async () => {
       preload: join(__dirname, '../../preload/dist/index.cjs')
     }
   })
+  mainWindow.setMenuBarVisibility(false)
 
   /**
    * If you install `show: true` then it can cause issues when trying to close the window.
